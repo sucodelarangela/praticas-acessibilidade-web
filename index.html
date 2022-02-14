@@ -30,6 +30,9 @@
     />
   </head>
   <body>
+    <a href="#conteudoPrincipal" class="pularNavegacao"
+      >Pular para conteúdo principal</a
+    >
     <header class="cabecalho container">
       <!-- Para svg, a melhor opção é o atributo title em vez de alt para evitar conflitos -->
       <a href="#" class="cabecalho-logo" title="Home Apeperia">
@@ -97,8 +100,8 @@
       </nav>
     </header>
 
-    <main class="conteudo">
-      <section class="secaoDestaque">
+    <main class="conteudo" role="main">
+      <section class="secaoDestaque" id="conteudoPrincipal">
         <h1 class="secaoDestaque-titulo">APLICATIVOS NA MEDIDA</h1>
         <h2 class="secaoDestaque-texto">
           A Apeperia é uma startup com um jeito inovador de comprar e montar
@@ -348,33 +351,41 @@
           <a
             href="http://blog.apeperia.com.br/design/conheca-primeiras-etapas-criacao-logotipo-teste-teste"
             class="secaoDestaques-link"
+            aria-labelledby="tituloDestaque1"
           >
-            <div class="secaoDestaques-destaque">
+            <figure class="secaoDestaques-destaque">
               <img
                 src="img/comecando-criar-logotipo.png"
                 class="secaoDestaques-destaque-img"
                 alt="Ferramentas de design. Ilustração"
               />
-              <p class="secaoDestaques-destaque-titulo" id="tituloDestaque1">
+              <figcaption
+                class="secaoDestaques-destaque-titulo"
+                id="tituloDestaque1"
+              >
                 Conheça as primeiras etapas na criação de um logotipo
-              </p>
-            </div>
+              </figcaption>
+            </figure>
           </a>
 
           <a
             href="http://blog.apeperia.com.br/design/dicas-como-fotografar-com-celular"
             class="secaoDestaques-link"
+            aria-labelledby="tituloDestaque2"
           >
-            <div class="secaoDestaques-destaque">
+            <figure class="secaoDestaques-destaque">
               <img
                 src="img/dicas-fotografia.png"
                 class="secaoDestaques-destaque-img"
                 alt="Moça mostrando câmera para rapaz"
               />
-              <p class="secaoDestaques-destaque-titulo" id="tituloDestaque2">
+              <figcaption
+                class="secaoDestaques-destaque-titulo"
+                id="tituloDestaque2"
+              >
                 Veja dicas de como fotografar usando seu celular
-              </p>
-            </div>
+              </figcaption>
+            </figure>
           </a>
 
           <button

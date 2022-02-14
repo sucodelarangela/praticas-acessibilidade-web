@@ -9,19 +9,22 @@
   width: 1px;
 }
 
-li[aria-hidden='true'] { display: none; }
-li[aria-hidden='false'] { display:block ; }
-
+li[aria-hidden='true'] {
+  display: none;
+}
+li[aria-hidden='false'] {
+  display: block;
+}
 
 .overlayDialog:before {
   content: '';
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
   z-index: 2;
   display: block;
   width: 100vw;
   height: 100vh;
-} 
+}
 
 .pularNavegacao,
 .pularNavegacao:active,
@@ -32,18 +35,18 @@ li[aria-hidden='false'] { display:block ; }
   overflow: hidden;
   width: 1px;
   height: 1px;
+  display: block;
   color: transparent;
   position: absolute;
 }
 
-.clearfix:after { 
-  content: "."; 
-  visibility: hidden; 
-  display: block; 
-  height: 0; 
+.clearfix:after {
+  content: '.';
+  visibility: hidden;
+  display: block;
+  height: 0;
   clear: both;
 }
-
 
 .apenasLeitorDeTela {
   position: absolute;
@@ -59,7 +62,7 @@ li[aria-hidden='false'] { display:block ; }
 .tituloPadrao {
   font-family: 'Montserrat', serif;
   margin-bottom: 1em;
-  color: #4F4C4C;
+  color: #4f4c4c;
   text-align: center;
   text-transform: uppercase;
 }
@@ -67,10 +70,10 @@ li[aria-hidden='false'] { display:block ; }
 .btnPadrao {
   border-radius: 5px;
   border: 0;
-  background-color: #B72E2E;
+  background-color: #b72e2e;
   color: #fff;
   font-size: 1.2em;
-  padding: .3em 1em;
+  padding: 0.3em 1em;
   font-family: 'Open Sans', 'Segoe UI', sans-serif;
   outline: 0;
   text-decoration: none;
@@ -78,7 +81,10 @@ li[aria-hidden='false'] { display:block ; }
 
 .btnPadrao:hover,
 .btnPadrao:focus {
-  background-image: linear-gradient(rgba(255, 255, 255, .05), rgba(255, 255, 255, .05));
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
   cursor: pointer;
 }
 
@@ -96,7 +102,7 @@ li[aria-hidden='false'] { display:block ; }
   }
 }
 
-@media (min-width: 1065px)  {
+@media (min-width: 1065px) {
   .container {
     width: 1000px;
   }
