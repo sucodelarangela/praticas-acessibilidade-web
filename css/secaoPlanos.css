@@ -1,31 +1,29 @@
-
 .secaoPlanos {
   text-align: center;
-  background-color: #F7F4F4;
+  background-color: #f7f4f4;
 }
 
 .secaoPlanos-plano {
   border-radius: 5px;
   background-color: #fff;
   width: 80%;
-  margin: 0 .5em 2em .5em;
+  margin: 0 0.5em 2em 0.5em;
   padding-bottom: 2em;
   box-shadow: 0 2px 9px #ddd;
   max-width: 300px;
   display: inline-block;
-
 }
 
 .secaoPlanos-plano--start {
-  color: #56CCF2;
+  color: #56ccf2;
 }
 
 .secaoPlanos-plano--ultra {
-  color: #B04CD9;
+  color: #b04cd9;
 }
 
 .secaoPlanos-plano--mega {
-  color: #E33B3B;
+  color: #e33b3b;
 }
 
 .secaoPlanos-plano-titulo {
@@ -33,14 +31,14 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
   width: 100%;
-  padding: .4em 1em;
+  padding: 0.4em 1em;
   font-size: 1.5em;
-  border-bottom: 1px solid #DFE3E5;
-  margin-bottom: .5em;
+  border-bottom: 1px solid #dfe3e5;
+  margin-bottom: 0.5em;
 }
 
 .secaoPlanos-plano-moeda {
-  font-size: .4em;
+  font-size: 0.4em;
   font-weight: normal;
   vertical-align: top;
   line-height: 2.5;
@@ -58,12 +56,13 @@
   position: relative;
 }
 
+/* O CSS também influencia na leitura, então mudaremos o list style de disc para none, para evitar que o símbolo seja lido na página. Caso seja necessário algum tipo de bullet, pode-se colocar usando pseudo elementos */
 .secaoPlanos-plano-itens {
   text-align: left;
   padding-left: 30px;
   margin: 1em auto 1.5em auto;
   line-height: 2;
-  list-style: disc;
+  list-style: none;
   color: #666;
   width: 240px;
 }
@@ -75,8 +74,8 @@
   border-width: 1px;
   border-style: solid;
   border-color: inherit;
-  padding: .4em 1.5em;
-  transition: .1s ease-in;
+  padding: 0.4em 1.5em;
+  transition: 0.1s ease-in;
 }
 
 .secaoPlanos-plano-btn:hover,
@@ -86,28 +85,25 @@
 
 .secaoPlanos-plano:nth-of-type(1) .secaoPlanos-plano-btn:hover,
 .secaoPlanos-plano:nth-of-type(1) .secaoPlanos-plano-btn:focus {
-  background-color: #56CCF2;
+  background-color: #56ccf2;
 }
 
 .secaoPlanos-plano:nth-of-type(2) .secaoPlanos-plano-btn:hover,
 .secaoPlanos-plano:nth-of-type(2) .secaoPlanos-plano-btn:focus {
-  background-color: #B04CD9;
+  background-color: #b04cd9;
 }
 
 .secaoPlanos-plano:nth-of-type(3) .secaoPlanos-plano-btn:hover,
 .secaoPlanos-plano:nth-of-type(3) .secaoPlanos-plano-btn:focus {
-  background-color: #E33B3B;
+  background-color: #e33b3b;
 }
 
 .secaoPlanos-plano-titulo--destaque {
-  background-color: #B72E2E;
+  background-color: #b72e2e;
 }
 
-
 @media (min-width: 830px) {
-
   .secaoPlanos-plano {
     max-width: 260px;
   }
-
 }

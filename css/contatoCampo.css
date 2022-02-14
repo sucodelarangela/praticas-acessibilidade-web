@@ -1,12 +1,11 @@
-
 .contatoCampo {
-  margin: .8em auto;
+  margin: 0.8em auto;
   max-width: 600px;
   position: relative;
 }
 
 .contatoCampo-label:before {
-  content:'';
+  content: '';
   vertical-align: middle;
   display: inline-block;
   width: 20px;
@@ -14,20 +13,25 @@
   text-align: center;
   background-color: #fff;
   transform: translate(-7px, -3px);
-  border: 1px solid #7D7D7D;
+  border: 1px solid #7d7d7d;
   color: transparent;
   line-height: 1;
-  transition: .2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .contatoCampo-checkbox:checked + .contatoCampo-label:before {
   content: 'x';
   color: #fff;
-  background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
+  background-image: radial-gradient(circle, #2da4e7, #2f80ed);
 }
 
+/* Tanto display: none quanto visibility: hidden vão "esconder" os itens do leitor de telas. Para esconder algo, usamos posicionamento absoluto e infinito, vide abaixo */
 .contatoCampo-checkbox {
-  display: none;
+  /* display: none; */
+  /* visibility: hidden; */
+  position: absolute;
+  left: -9999px; /* infinito */
+  opacity: 0;
 }
 
 .contatoCampo-icone {
@@ -43,39 +47,39 @@
   display: block;
   width: 100%;
   text-align: left;
-} 
+}
 
 .contatoCampo label {
   margin-bottom: 5px;
   margin-left: 8px;
-} 
+}
 
 .contatoCampo input,
 .contatoCampo textarea {
   font-size: 1em;
-  padding: .5em;
+  padding: 0.5em;
   min-height: 50px;
   border-radius: 8px;
   border: 2px solid #ccc;
   outline: 0;
-} 
+}
 
 .contatoCampo input:focus,
 .contatoCampo textarea:focus {
   border: 2px solid #222;
-} 
+}
 
 .contatoCampo-campoDesabilitado {
   background-color: #ddd;
 }
 
-.contatoCampo-msg, 
+.contatoCampo-msg,
 .formContato-validacao {
   margin-left: 4px;
   margin-top: 4px;
-  font-size: .9em;
+  font-size: 0.9em;
   font-weight: bold;
-  color: #FD1242;
+  color: #fd1242;
   display: inline-block;
 }
 
@@ -86,7 +90,7 @@
 }
 
 .contatoCampo .contatoCampo--validouErro {
-  border: 2px solid #FF0000;
+  border: 2px solid #ff0000;
   background-color: #fff;
   position: relative;
 }
@@ -98,8 +102,8 @@
   height: 32px;
   position: absolute;
   z-index: 1;
-  right: .4em;
-  transform: translateY(112%) scale(.65);
+  right: 0.4em;
+  transform: translateY(112%) scale(0.65);
   background-image: url(../img/validacao-sucesso.png);
 }
 
@@ -110,8 +114,7 @@
   height: 32px;
   position: absolute;
   z-index: 1;
-  right: .4em;
-  transform: translateY(112%) scale(.65);
+  right: 0.4em;
+  transform: translateY(112%) scale(0.65);
   background-image: url(../img/validacao-erro.png);
 }
-
