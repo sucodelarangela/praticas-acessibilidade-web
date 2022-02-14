@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <title>Apeperia - aplicativos sob medida</title>
@@ -30,7 +30,8 @@
     />
   </head>
   <body>
-    <header class="cabecalho container">
+    <header class="cabecalho container" title="Logotipo da Apeperia">
+      <!-- Para svg, a melhor opção é o atributo title em vez de alt para evitar conflitos -->
       <a href="#" class="cabecalho-logo">
         <svg
           width="205"
@@ -40,7 +41,7 @@
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
         >
-          <desc>Created using Figma</desc>
+          <!-- <desc>Created using Figma</desc> -->
           <g id="Canvas" transform="translate(-2230 1001)">
             <g id="Logo do Apeperia">
               <g id="Oval 1">
@@ -150,7 +151,11 @@
 
       <section class="secaoSobre clearfix">
         <div class="container">
-          <img src="img/sobre-apeperia.png" class="secaoSobre-imgDestaque" />
+          <img
+            src="img/sobre-apeperia.png"
+            class="secaoSobre-imgDestaque"
+            alt="Dois homens concentrados idealizando um projeto novo em frente a um quadro branco"
+          />
           <h2 class="secaoSobre-titulo tituloPadrao">SOBRE</h2>
           <p class="secaoSobre-texto">
             Criamos aplicativos personalizados de maneira diferente e para
@@ -172,11 +177,11 @@
           </p>
 
           <ul class="secaoSobre-plataformas">
-            <li><img src="img/android.png" alt="Ícone do Android" /></li>
-            <li><img src="img/blackberry.png" alt="Ícone da Blackberry" /></li>
-            <li><img src="img/apple.png" alt="Ícone do iOS" /></li>
+            <li><img src="img/android.png" alt="Android" /></li>
+            <li><img src="img/blackberry.png" alt="Blackberry" /></li>
+            <li><img src="img/apple.png" alt="iOS" /></li>
             <li>
-              <img src="img/windowsphone.png" alt="Ícone do Windows Phone" />
+              <img src="img/windowsphone.png" alt="Windows Phone" />
             </li>
           </ul>
           <p>Desenvolvemos aplicativos para todas as plataformas</p>
@@ -241,6 +246,7 @@
               <img
                 src="img/10-aplicativos-mais-baixados.png"
                 class="listaDeArtigos-artigo-img"
+                alt="Teclado da Apple e um celular Android"
               />
               <h2 class="listaDeArtigos-artigo-titulo">
                 Conheça os 10 aplicativos mais badalados do momento
@@ -262,6 +268,7 @@
               <img
                 src="img/ux-usabilidade.jpg"
                 class="listaDeArtigos-artigo-img"
+                alt="Pessoa segurando um celular"
               />
               <h2 class="listaDeArtigos-artigo-titulo">
                 Usabilidade: Entenda os benefícios de treinar sua equipe em UX
@@ -283,6 +290,7 @@
               <img
                 src="img/dicas-acessibilidade.jpg"
                 class="listaDeArtigos-artigo-img"
+                alt="Pessoas levantando um senhor para ver melhor um show"
               />
               <h2 class="listaDeArtigos-artigo-titulo">
                 5 dicas para melhorar a acessibilidade em sua interface
@@ -345,6 +353,7 @@
               <img
                 src="img/comecando-criar-logotipo.png"
                 class="secaoDestaques-destaque-img"
+                alt="Ferramentas de design. Ilustração"
               />
               <p class="secaoDestaques-destaque-titulo" id="tituloDestaque1">
                 Conheça as primeiras etapas na criação de um logotipo
@@ -360,6 +369,7 @@
               <img
                 src="img/dicas-fotografia.png"
                 class="secaoDestaques-destaque-img"
+                alt="Moça mostrando câmera para rapaz"
               />
               <p class="secaoDestaques-destaque-titulo" id="tituloDestaque2">
                 Veja dicas de como fotografar usando seu celular
@@ -547,7 +557,11 @@
 
     <footer class="rodape">
       <div class="container">
-        <img src="img/logo-apeperia.svg" class="rodape-logo" />
+        <img
+          src="img/logo-apeperia.svg"
+          class="rodape-logo"
+          alt="logotipo Apeperia"
+        />
 
         <ul class="rodape-social">
           <li>
