@@ -24,10 +24,7 @@
     <link rel="stylesheet" href="css/rodape.css" />
     <link rel="stylesheet" href="css/dialogNewsletter.css" />
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width" />
   </head>
   <body>
     <a href="#conteudoPrincipal" class="pularNavegacao"
@@ -430,27 +427,34 @@
             </p>
 
             <div class="contatoCampo contatoCampo--sucesso">
-              <label>Nome: </label>
+              <label for="nome">Nome: </label>
               <input
                 type="text"
+                id="nome"
                 class="contatoCampo--validouFoi"
-                value="Natan Souza"
+                value=""
                 required
               />
             </div>
 
             <div class="contatoCampo contatoCampo--erro">
-              <label>Email: </label>
-              <input type="email" class="contatoCampo--validouErro" required />
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                id="email"
+                class="contatoCampo--validouErro"
+                required
+              />
               <span class="contatoCampo-msg contatoCampo-msg--erro">
                 Você quis dizer <a href="#">gmail.com?</a>
               </span>
             </div>
 
             <div class="contatoCampo contatoCampo--erro">
-              <label>Telefone: </label>
+              <label for="fone">Telefone: </label>
               <input
                 type="text"
+                id="fone"
                 class="contatoCampo--validouErro"
                 placeholder="(11) 5571-2751"
               />
@@ -460,9 +464,10 @@
             </div>
 
             <div class="contatoCampo">
-              <label>CEP: </label>
+              <label for="cep">CEP: </label>
               <input
                 type="text"
+                id="cep"
                 maxlength="8"
                 placeholder="Exemplo: 04101-300"
                 required
@@ -470,48 +475,58 @@
             </div>
 
             <div class="contatoCampo">
-              <label>Endereço: </label>
+              <label for="endereco">Endereço: </label>
               <input
                 type="text"
+                id="endereco"
                 class="contatoCampo-campoDesabilitado"
-                disabled
+                readonly
                 value="Rua Vergueiro"
               />
             </div>
 
             <div class="contatoCampo">
-              <label>Bairro: </label>
+              <label for="bairro">Bairro: </label>
               <input
                 type="text"
+                id="bairro"
                 class="contatoCampo-campoDesabilitado"
-                disabled
+                readonly
                 value="Vila Mariana"
               />
             </div>
 
             <div class="contatoCampo">
-              <label>Cidade: </label>
+              <label for="cidade">Cidade: </label>
               <input
                 type="text"
+                id="cidade"
                 class="contatoCampo-campoDesabilitado"
-                disabled
+                readonly
                 value="São Paulo"
               />
             </div>
 
             <div class="contatoCampo">
-              <label>Estado: </label>
+              <label for="estado">Estado: </label>
               <input
                 type="text"
+                id="estado"
                 class="contatoCampo-campoDesabilitado"
-                disabled
+                readonly
                 value="SP"
               />
             </div>
 
             <div class="contatoCampo">
-              <label>Mensagem: </label>
-              <textarea name="" cols="30" rows="10" required></textarea>
+              <label for="mensagem">Mensagem: </label>
+              <textarea
+                id="mensagem"
+                name=""
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
             </div>
 
             <div class="contatoCampo">
@@ -561,7 +576,15 @@
           <video
             src="img/formacao-java.mp4"
             class="secaoInstitucional-video"
-          ></video>
+            controls
+          >
+            <track
+              src="img/legenda-portugues-brasil.vtt"
+              kind="subtitles"
+              srclang="pt-br"
+              label="Português (Brasil)"
+            />
+          </video>
         </div>
       </section>
       <!--fim .secaoInstitucional-->
