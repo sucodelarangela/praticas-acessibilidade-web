@@ -670,7 +670,14 @@
           <button type="submit" class="dialogNewsletter-btn">
             Assinar newsletter
           </button>
-          <button type="button" class="dialogNewsletter-fechar">X</button>
+          <button
+            type="button"
+            class="dialogNewsletter-fechar"
+            aria-label="Fechar janela modal"
+          >
+            <!-- O aria-label evita que o NVDA leia o "X" que está no content do elemento no CSS e também ignora o conteúdo abaixo -->
+            Fechar modal
+          </button>
         </form>
       </div>
       <div class="dialogNewsletter-overlay"></div>

@@ -28,3 +28,13 @@ function fechandoDialog() {
 document
   .querySelector('.dialogNewsletter-fechar')
   .addEventListener('click', fechandoDialog)
+
+// Fechar dialog clicando no overlay
+dialogOverlay.addEventListener('click', fechandoDialog)
+
+// Fechar dialog com ESC
+document.addEventListener('keyup', evento => {
+  if (evento.keyCode == 27) {
+    fechandoDialog()
+  }
+})
