@@ -256,7 +256,11 @@
         <section class="secaoBlog container">
           <h2 class="secaoBlog-titulo tituloPadrao">BLOG</h2>
 
-          <ul class="listaDeArtigos">
+          <h3 id="tituloBlog" class="escondeVisualmente">
+            Lista de artigos mais lidos na semana
+          </h3>
+
+          <ol class="listaDeArtigos" aria-labelledby="tituloBlog">
             <li id="new0" class="listaDeArtigos-item">
               <article class="listaDeArtigos-artigo">
                 <img
@@ -322,7 +326,7 @@
                 </p>
               </article>
             </li>
-          </ul>
+          </ol>
 
           <nav>
             <ul class="listaDeArtigos-slider">
@@ -330,7 +334,7 @@
                 <a
                   href="#new0"
                   data-sliderItem="0"
-                  class="listaDeArtigos-slider-item listaDeArtigos-slider-item--ativo"
+                  class="listaDeArtigos-slider-item"
                 >
                   Notícia 1
                 </a>
