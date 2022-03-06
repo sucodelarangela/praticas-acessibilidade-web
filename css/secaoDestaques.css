@@ -1,12 +1,12 @@
 .secaoDestaques {
-  background-color: #DCEDF5;
+  background-color: #dcedf5;
   text-align: center;
 }
 
 .secaoDestaques-destaque {
   margin-bottom: 1em;
   padding: 1em;
-  transition:  .3s;
+  transition: 0.3s;
   text-align: left;
 }
 
@@ -15,7 +15,7 @@
   text-decoration: none;
   max-width: 400px;
   display: inline-block;
-  margin: 1em .5em;
+  margin: 1em 0.5em;
 }
 
 .secaoDestaques-link:hover,
@@ -23,14 +23,14 @@
   background-color: #fff;
   cursor: pointer;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .3); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   outline: 0;
 }
 
 .secaoDestaques-destaque-titulo {
   margin-top: 1em;
   font-weight: bold;
-  font-size: 1.2em
+  font-size: 1.2em;
 }
 
 .secaoDestaques-destaque-img {
@@ -45,19 +45,18 @@
 .secaoDestaques-form-botao {
   max-width: 20em;
   margin-top: 1em;
-  display: block;
+  display: none;
   margin: 0 auto;
   background: transparent;
-  color: #B72E2E;
-  border: 1px solid #B72E2E;
+  color: #b72e2e;
+  border: 1px solid #b72e2e;
 }
 
 .secaoDestaques-form-botao:hover,
 .secaoDestaques-form-botao:focus {
   color: #fff;
-  background-color: #B72E2E;
+  background-color: #b72e2e;
 }
-
 
 /*
 
@@ -65,4 +64,3 @@
 display: inline-blaock;
 }
 */
-
