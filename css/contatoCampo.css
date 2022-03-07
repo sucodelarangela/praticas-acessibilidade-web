@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.contatoCampo-label {
+  position: relative;
+}
+
 .contatoCampo-label:before {
   content: '';
   vertical-align: middle;
@@ -16,13 +20,35 @@
   border: 1px solid #7d7d7d;
   color: transparent;
   line-height: 1;
-  transition: 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+  box-sizing: border-box;
+}
+
+.contatoCampo-checkbox:hover + .contatoCampo-label:before,
+.contatoCampo-checkbox:focus + .contatoCampo-label:before {
+  border: 3px double #333;
+  line-height: 0.7;
 }
 
 .contatoCampo-checkbox:checked + .contatoCampo-label:before {
-  content: 'x';
+  content: '';
   color: #fff;
   background-image: radial-gradient(circle, #2da4e7, #2f80ed);
+  border-color: #015fbe;
+}
+
+.contatoCampo-checkbox:checked + .contatoCampo-label:after {
+  content: '';
+  width: 10px;
+  height: 5px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  z-index: 2;
+  left: -3px;
+  top: 4px;
+  display: block;
 }
 
 /* Tanto display: none quanto visibility: hidden vão "esconder" os itens do leitor de telas. Para esconder algo, usamos posicionamento absoluto e infinito, vide abaixo */
