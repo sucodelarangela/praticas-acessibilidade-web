@@ -436,7 +436,7 @@
                     type="text"
                     id="nome"
                     class="contatoCampo--validouFoi"
-                    value=""
+                    value="Angela Caldas"
                     required
                   />
                 </div>
@@ -447,6 +447,7 @@
                     type="email"
                     id="email"
                     class="contatoCampo--validouErro"
+                    value="contato@alura.com.br"
                     required
                   />
                   <span class="contatoCampo-msg contatoCampo-msg--erro">
@@ -524,13 +525,10 @@
 
                 <div class="contatoCampo">
                   <label for="mensagem">Mensagem: </label>
-                  <textarea
-                    id="mensagem"
-                    name=""
-                    cols="30"
-                    rows="10"
-                    required
-                  ></textarea>
+                  <textarea id="mensagem" name="" cols="30" rows="10" required>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sint laudantium ea, ducimus labore eveniet sunt sit maxime velit nemo modi voluptatibus minus adipisci amet ut quibusdam. Dignissimos, dolor animi.
+</textarea
+                  >
                 </div>
 
                 <div class="contatoCampo">
@@ -697,5 +695,6 @@
     <!-- instala a lib 'inert' através de npm install --save wicg-inert, depois só importar aqui -->
     <script src="/node_modules/wicg-inert/dist/inert.min.js"></script>
     <script src="js/dialog.js"></script>
+    <script src="js/validacao-cep.js"></script>
   </body>
 </html>
