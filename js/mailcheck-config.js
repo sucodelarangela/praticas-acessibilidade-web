@@ -23,6 +23,10 @@ campoEmail.addEventListener('blur', function () {
       sugestao.textContent = `Você quis dizer: ${suggestion.full}?`
       sugestao.parentNode.classList.add('contatoCampo--erro')
       campoEmail.classList.add('contatoCampo--validouErro')
+      // Para dar foco ao erro/sugestão:
+      sugestao.setAttribute('tabindex', '0')
+      // Indicar ao NVDA que se trata de um alerta/erro:
+      sugestao.setAttribute('role', 'alert')
     }
   })
 })
