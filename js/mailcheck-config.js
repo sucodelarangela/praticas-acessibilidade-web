@@ -1,6 +1,6 @@
 var domains = ['gmail.com', 'aol.com']
 var secondLevelDomains = ['hotmail']
-var topLevelDomains = ['com', 'net', 'org']
+var topLevelDomains = ['com', 'net', 'org', 'com.br']
 // Variables created by us:
 var campoEmail = document.querySelector('#email')
 var sugestao = document.querySelector('#sugestao')
@@ -18,7 +18,11 @@ campoEmail.addEventListener('blur', function () {
     // distanceFunction: superStringDistance, // optional
     suggested: function (suggestion) {
       // callback code created by us
-      console.log(suggestion.full)
+      // console.log(suggestion.full)
+      sugestao.style.display = 'inline-block'
+      sugestao.textContent = `Você quis dizer: ${suggestion.full}?`
+      sugestao.parentNode.classList.add('contatoCampo--erro')
+      campoEmail.classList.add('contatoCampo--validouErro')
     }
   })
 })
