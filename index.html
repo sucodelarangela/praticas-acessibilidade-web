@@ -450,8 +450,10 @@
                     value="contato@alura.com.br"
                     required
                   />
-                  <span class="contatoCampo-msg contatoCampo-msg--erro">
-                    Você quis dizer <a href="#">gmail.com?</a>
+                  <span
+                    id="sugestao"
+                    class="contatoCampo-msg contatoCampo-msg--erro"
+                  >
                   </span>
                 </div>
 
@@ -475,6 +477,7 @@
                     id="cep"
                     maxlength="8"
                     placeholder="Exemplo: 04101-300"
+                    value="65074863"
                     required
                   />
                 </div>
@@ -696,5 +699,7 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sint laudantiu
     <script src="/node_modules/wicg-inert/dist/inert.min.js"></script>
     <script src="js/dialog.js"></script>
     <script src="js/validacao-cep.js"></script>
+    <script src="/node_modules/mailcheck/src/mailcheck.min.js"></script>
+    <script src="js/mailcheck-config.js"></script>
   </body>
 </html>
